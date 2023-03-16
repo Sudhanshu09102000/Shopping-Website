@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".form").on('submit',function(e){
+                e.preventDefault();
+                var name= $(".name").val();
+                var email= $(".email").val();
+                var subject= $(".subject").val();
+                var message= $(".message").val();
+                $.post("",{n:name,e:email,s:subject,m:message},function(){
+                    alert("Thankyou! Your response has been submitted.");
+                })
+            })
+        })
+    </script> -->
+
+    <script src="https://kit.fontawesome.com/e7ea333cb2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section id="header">
+        <a href="#">
+            <img src="images/download.png" class="logo" alt="">
+        </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><img src="images/xmark-solid.svg" alt="" width="25px"></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <img src="images/outdent-solid.svg" width="25px" id="bar">
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>#let's talk</h2>
+        <p>LEAVE A MESSAGE.We love to hear from you!</p>
+    </section>
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our agency locations or contact us today.</h2>
+            <h3>Head Office</h3>
+            <div>
+                <li>
+                    <a href=""><img src="images/map-regular.svg" alt="" width="25px"></a>
+                    <p>&nbsp;214 Halisahar Malancha Kalitala West Bengal India</p>
+                </li>
+                <li>
+                    <a href=""><img src="images/envelope-solid.svg" alt="" width="25px"></a>
+                    <p>&nbsp;sharma.hlr2000@gmail.com</p>
+                </li>
+                <li>
+                    <a href=""><img src="images/phone-solid.svg" alt="" width="25px"></a>
+                    <p>&nbsp;+919875333892</p>
+                </li>
+                <li>
+                    <a href=""><img src="images/clock-solid.svg" alt="" width="25px"></a>
+                    <p>&nbsp;Monday to Saturday: 9:00am to 5:00pm</p>
+                </li>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d527.5189885296592!2d88.4350007077308!3d22.911148118053436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f895e2cc2cb6d7%3A0x9d6c9ad1419c6261!2sSharma%20Niwas%20%26%20Teachers!5e0!3m2!1sen!2sin!4v1678993052800!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section id="form-details">
+        <form name="submit-to-google-sheet">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you</h2>
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="email" placeholder="E-mail">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" id="" cols="30" rows="10">Your Message</textarea>
+                <button name="submit" type="submit" class="normal">Submit</button>
+            <span id="msg" name="msg"></span>
+        </form>
+
+        <div class="people">
+            <div>
+                <img src="images/people/1.png" alt="">
+                <p><span>Himanshu Sharma</span><br> Senior Marketing Manager <br> Phone: +7003035144 <br>Email:
+                    him.kpa@gmail.com</p>
+            </div>
+
+            <div>
+                <img src="images/people/2.png" alt="">
+                <p><span>Lav Mandal</span><br> Senior Executive Engineer <br> Phone: +918777075404 <br>Email:
+                    themondallab2812@gmail.com</p>
+            </div>
+
+            <div>
+                <img src="images/people/3.png" alt="">
+                <p><span>Priya Sharma</span><br> Senior Production Manager <br> Phone: +919725887469<br>Email:
+                    him.kpa@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for NewsLetter</h4>
+            <p>Get E-mail updates about our latest shop <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Here">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo2" src="images/Untitled.png" alt="" width="150px">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 214 Malancha ,Kalitala, West Bengal, India.</p>
+            <p><strong>Phone: </strong> +919875333892</p>
+            <p><strong>Hours: </strong> 10:00 - 22:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icons">
+                    <a href="https://www.facebook.com/profile.php?id=100011760596080&mibextid=ZbWKwL"><img
+                            src="images/facebook.svg" width="25px" alt=""></a>
+                    <a href="https://wa.me/+919875333892"><img src="images/whatsapp.svg" width="25px" alt=""></a>
+                    <a href="https://instagram.com/sudhanshu.hlr?igshid=ZDdkNTZiNTM="><img src="images/instagram.svg"
+                            width="25px" alt=""></a>
+                    <a href="http://www.twitter.com/@Sudhans19382206"><img src="images/twitter.svg" width="25px"
+                            alt=""></a>
+                    <a href="https://www.youtube.com/channel/UC9ozqnjryIa7ndF6dj96bzQ"><img src="images/youtube.svg"
+                            width="25px" alt=""></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="images/pay/app.jpg" alt="">
+                <img src="images/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="images/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p> Copyright &copy; Sudhanshu &hearts; Sharma</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxfBTzzpHc2k1aWU6dLFx9XWWGItTD-Sx8XNWZQqB26yk2yBbq7UOhikBXBPmKW9V2L/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            document.getElementById("msg").innerText="Thanks! Your response has been sent."
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    form.reset()
+                    document.getElementById("msg").innerText=""
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
